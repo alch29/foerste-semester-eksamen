@@ -193,21 +193,23 @@ a:hover {
 }
 
 .forside-text h1 {
-    font-size: 4rem;
+    font-size: 3.6rem;
     font-family: 'Frank Ruhl Libre', serif;
     color: #FFFDF4;
     padding: 30px;
     margin:0;
+    text-align: center;
 }
 
 .forside-text h2 {
     color: #FFFDF4;
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: normal;
     line-height: 1.4em;
     padding: 30px;
     padding-top: 0px;
     margin: 0;
+    text-align: center;
 }
 
 .forside-billede {
@@ -240,6 +242,7 @@ form {
     padding-left: 10px;
     outline: none;
     font-family: 'Roboto', sans-serif;
+    font-size: 0.9rem;
 }
 
 .textarea {
@@ -251,8 +254,8 @@ form {
 }
 
 .knap {
-    color: #EA9724;
-    background-color: #FFFDF4;
+    color: #FFFDF4;
+    background-color: #1D4648;
     border: solid 2px #1D4648;
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
@@ -264,15 +267,12 @@ form {
 }
 
 .knap:hover {
-    color: #FFFDF4;
-    background-color: #1D4648;
+    color: #EA9724;
+    background-color: #FFFDF4;
     border: solid 2px #1D4648;
 }
 
-.ul-kontakt {
-    font-family: 'Roboto', sans-serif;
-    list-style: none;
-}
+
 
 
 /* Styles til portfolio */
@@ -350,11 +350,12 @@ form {
         height: auto;
         max-width: 700px;
         margin: 40px;
-        padding-bottom: 20px;
+        margin-top: 0px;
     }
 
     .profilbillede {
         margin: 40px;
+        margin-top: 0px;
         margin-right: 0px;
     }
 
