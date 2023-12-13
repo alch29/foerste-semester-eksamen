@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2000 1200">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fffcbd;
+        opacity: .1;
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        stroke-width: 0px;
+      }
+
+      .cls-2 {
+        fill: #39665d;
+      }
+
+      .cls-3 {
+        fill: #1d4648;
+      }
+    </style>
+  </defs>
+  <g id="Lag_3" data-name="Lag 3">
+    <rect class="cls-2" x="1236.66" width="763.34" height="1200"/>
+    <rect class="cls-3" width="1236.66" height="1200"/>
+  </g>
+  <g id="Lag_4" data-name="Lag 4">
+    <path class="cls-1" d="m1506.67-200.1V237.12c-44.85-9.12-91.26-13.91-138.78-13.91-383.6,0-694.58,311.98-694.58,696.82,0,4.76.05,9.5.14,14.24h-262.6V-200.1h1095.82Z"/>
+    <path class="cls-1" d="m2062.47,920.04c0,384.85-310.98,696.83-694.59,696.83s-686.88-304.32-694.44-682.59h833.22V237.12c317.11,64.51,555.81,345.75,555.81,682.91Z"/>
+  </g>
+</svg>
