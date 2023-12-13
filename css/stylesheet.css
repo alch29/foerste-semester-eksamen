@@ -1,6 +1,7 @@
-/* Her er de generelle styles */
-
 @import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+/* Her er de generelle styles */
 
 :root {
     --brder-bottom: solid #1D4648 1.5px;
@@ -67,7 +68,7 @@ p {
 }
 
 
-/* Her er specifikke styles til header */
+/* Styles til header */
 
 .header {
     grid-area: header;
@@ -78,8 +79,7 @@ p {
     border-bottom: var(--brder-bottom);
     background: var(--background-color);
     position: fixed;
-    height: 70px;
-    
+    height: 70px;  
 }
 
 .logo {
@@ -278,22 +278,6 @@ form {
 
 /* Styles til portfolio */
 
-.textbox {
-    width: 80%;
-    height: auto;
-    background-color: var(--background-color);
-    border: var(--border);
-    box-shadow: var(--box-shadow);
-    padding: 20px;
-    padding-top: 0px;
-    max-width: 600px;
-    margin-bottom: 40px;
-}
-
-.textbox h2 {
-    padding-top: 20px;
-}
-
 .image-grid {
     display: flex;
     flex-direction: column;
@@ -338,8 +322,24 @@ form {
     border: var(--border); 
 }
 
+.textbox {
+    width: 80%;
+    height: auto;
+    background-color: var(--background-color);
+    border: var(--border);
+    box-shadow: var(--box-shadow);
+    padding: 20px;
+    padding-top: 0px;
+    max-width: 600px;
+    margin-bottom: 40px;
+}
+
+.textbox h2 {
+    padding-top: 20px;
+}
 
 
+/* Media query, til når skærmen bliver større end 1200px */
 
 @media only screen and (min-width: 1200px) {
     .flex {
@@ -365,6 +365,8 @@ form {
 
 }
 
+
+/* Media query, til når skærmen bliver større end 800px */
 
 @media only screen and (min-width: 800px) {
     .container {
