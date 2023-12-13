@@ -3,14 +3,6 @@
 
 /* Her er de generelle styles */
 
-:root {
-    --brder-bottom: solid #1D4648 1.5px;
-    --border-top: solid #1D4648 1.5px;
-    --background-color: #FFFDF4;
-    --box-shadow: 10px 10px 0 0 rgba(57, 102, 93, 0.6);
-    --border: solid #1D4648 1.5px;
-}
-
 * {
     box-sizing: border-box;
   }
@@ -29,9 +21,12 @@ body {
     grid-template-rows: 70px auto 160px;
 }
 
-a {
-    text-decoration: none;
+h1 {
+    font-size: 2.4rem;
+    font-family: 'Frank Ruhl Libre', serif;
     color: #1D4648;
+    margin-top: 40px;
+    margin-bottom: 60px;
 }
 
 h2 {
@@ -76,8 +71,8 @@ p {
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
-    border-bottom: var(--brder-bottom);
-    background: var(--background-color);
+    border-bottom: solid #1D4648 1.8px;
+    background-color: #FFFDF4;
     position: fixed;
     height: 70px;  
 }
@@ -105,8 +100,8 @@ nav {
     top: 100%;
     left: 0;
     width: 100%;
-    border-bottom: var(--brder-bottom);
-    background-color: var(--background-color);
+    border-bottom: solid #1D4648 1.8px;
+    background-color: #FFFDF4;
     transform: scale(1,0);
     transform-origin: top;
     transition: 0.4s ease-in-out;
@@ -163,8 +158,8 @@ a:hover {
 .footer {
     grid-area: footer;
     width: 100%;
-    border-top: var(--border-top);
-    background: var(--background-color);
+    border-top: solid #1D4648 1.8px;
+    background-color: #FFFDF4;
 }
 
 .footer-icon {
@@ -226,9 +221,10 @@ a:hover {
 .contactbox {
     width: 80%;
     max-width: 600px;
-    background-color: var(--background-color);
-    box-shadow: var(--box-shadow);
-    border: var(--border);
+    background-color: #FFFDF4;
+    box-shadow: 10px 10px 0 0 rgba(57, 102, 93, 0.6);
+    border: solid #1D4648 1.8px;
+    margin-bottom: 40px;
 }
 
 form {
@@ -247,13 +243,16 @@ form {
 }
 
 .textarea {
-    height: 180px;
+    max-width: 100%;
+    min-width: 100%;
+    min-height: 180px;
+    max-height: 400px;
     padding-top: 10px;
 }
 
 .knap {
     color: #EA9724;
-    background-color: var(--background-color);
+    background-color: #FFFDF4;
     border: solid 2px #1D4648;
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
@@ -295,18 +294,18 @@ form {
 .image-container img {
     max-width: 100%;
     height: auto;
-    border: var(--border);
+    border: solid #1D4648 1.8px;
     margin: 0;
-    box-shadow: var(--box-shadow);
+    box-shadow: 10px 10px 0 0 rgba(57, 102, 93, 0.6);
 }
 
 .image-container p {
     width: 100%;
-    height: auto;
+    height: 100px;
     padding: 10px;
-    background-color: var(--background-color);
-    border: var(--border);
-    box-shadow: var(--box-shadow);
+    background-color: #FFFDF4;
+    border: solid #1D4648 1.8px;
+    box-shadow: 10px 10px 0 0 rgba(57, 102, 93, 0.6);
     max-width: 450px;
     margin-top: 8px;
 }
@@ -318,16 +317,16 @@ form {
     width: 80%;
     max-width: 500px;
     margin-bottom: 40px;
-    box-shadow: var(--box-shadow);
-    border: var(--border); 
+    box-shadow: 10px 10px 0 0 rgba(57, 102, 93, 0.6);
+    border: solid #1D4648 1.8px;
 }
 
 .textbox {
     width: 80%;
     height: auto;
-    background-color: var(--background-color);
-    border: var(--border);
-    box-shadow: var(--box-shadow);
+    background-color: #FFFDF4;
+    border: solid #1D4648 1.8px;
+    box-shadow: 10px 10px 0 0 rgba(57, 102, 93, 0.6);
     padding: 20px;
     padding-top: 0px;
     max-width: 600px;
@@ -348,8 +347,8 @@ form {
     }
 
     .textbox {
-        max-height: 500px;
-        max-width: auto;
+        height: auto;
+        max-width: 700px;
         margin: 40px;
         padding-bottom: 20px;
     }
@@ -369,14 +368,6 @@ form {
 /* Media query, til når skærmen bliver større end 800px */
 
 @media only screen and (min-width: 800px) {
-    .container {
-        display: grid;
-        grid-template-areas: 
-            "header header header"
-            "main main main"
-            "footer footer footer";
-        grid-template-columns: repeat(3, 1fr);
-    }
 
     .nav-toggle-label {
         display: none;
@@ -404,7 +395,7 @@ form {
     }
     
     .forside-text h2 {
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
 
     .image-grid {
