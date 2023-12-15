@@ -406,3 +406,13 @@ form {
     }
 
 }
+
+
+/* Media query, til når skærmen bliver mindre end 500px */
+
+@media only screen and (max-width: 400px) {
+    
+    .contactbox p {
+        font-size: 1rem;
+    }
+}
